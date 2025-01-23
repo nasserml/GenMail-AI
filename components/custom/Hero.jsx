@@ -14,7 +14,7 @@ function Hero() {
         <Button variant="outline">Try Demo</Button>
         <Button>Get Started</Button>
       </div>
-      <Image src={"/landing.avif"} width={1000} height={800} alt='landing' className='mt-12 rounded-xl w-1/2' />
+      <Image src={"/landing.png"} width={1000} height={800} alt='landing' className='mt-12 rounded-xl mb-12' />
     </div>
   )
 }
