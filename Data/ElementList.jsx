@@ -6,10 +6,10 @@ import { Columns2, Facebook, Frame, Framer, Image, Link2, PanelTop, Projector, R
 export default [
     {
         icon: RectangleEllipsis,
-        label: 'Przycisk',
+        label: 'Button',
         type: 'Button',
         content: 'Przykładowy przycisk',
-        url: '#',
+        url: '',
         style: {
             textAlign: 'center',
             backgroundColor: '#007bff',
@@ -32,7 +32,7 @@ export default [
     {
         icon: TextSelectionIcon,
         type: 'Text',
-        label: 'Tekst',
+        label: 'Text',
         textarea: 'Przykładowy tekst',
         style: {
             backgroundColor: '#fff',
@@ -51,10 +51,10 @@ export default [
     {
         icon: Image,
         type: 'Image',
-        label: 'Obrazek',
+        label: 'Image',
         imageUrl: "/image.png",
         alt: 'Image',
-        url: '#',
+        url: '',
         style: {
             backgroundColor: '#ffffff',
             padding: '10px',
@@ -77,7 +77,7 @@ export default [
         label: 'Logo',
         imageUrl: "/logo.svg",
         alt: 'logo',
-        url: '#',
+        url: '',
         style: {
             backgroundColor: '#ffffff',
             padding: '10px',
@@ -92,27 +92,27 @@ export default [
             width: '100%'
         }
     },
-    {
-        icon: PanelTop,
-        type: 'LogoHeader',
-        label: 'Logo menu',
-        imageUrl: "/logo.svg",
-        alt: 'logo',
-        url: '#',
-        style: {
-            backgroundColor: '#ffffff',
-            padding: '10px',
-            height: '40%',
-            width: '40%',
-        },
-        outerStyle: {
-            display: 'flex',
-            justifyContent: 'left',
-            alignItems: 'center',
-            backgroundColor: '#fff',
-            width: '100%'
-        }
-    },
+    // {
+    //     icon: PanelTop,
+    //     type: 'LogoHeader',
+    //     label: 'Logo Menu',
+    //     imageUrl: "/logo.svg",
+    //     alt: 'logo',
+    //     url: '',
+    //     style: {
+    //         backgroundColor: '#ffffff',
+    //         padding: '10px',
+    //         height: '40%',
+    //         width: '40%',
+    //     },
+    //     outerStyle: {
+    //         display: 'flex',
+    //         justifyContent: 'left',
+    //         alignItems: 'center',
+    //         backgroundColor: '#fff',
+    //         width: '100%'
+    //     }
+    // },
     {
         icon: SquareSplitVertical,
         type: 'Divider',
@@ -127,7 +127,7 @@ export default [
     {
         type: 'SocialIcons',
         icon: Twitter,
-        label: 'Social media',
+        label: '',
         socialIcons: [
             {
                 icon: 'https://cdn-icons-png.flaticon.com/128/2111/2111463.png',

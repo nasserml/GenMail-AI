@@ -11,7 +11,7 @@ function Editor() {
 
       <div className="grid grid-cols-5">
         <ElementsSideBar />
-        <div>
+        <div className='col-span-3 bg-gray-200'>
           <Canvas />
         </div>
         <Settings />
