@@ -21,6 +21,8 @@ function Provider({ children }) {
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const storage = JSON.parse(localStorage.getItem('userDetail'));
+      const emailTemplate = JSON.parse(localStorage.getItem('emailTemplate'));
+      setEmailTemplate(emailTemplate ?? []);
       if (!storage || !storage?.email) {
         // Redirect user to home screen
         router.push('/');
@@ -28,6 +30,12 @@ function Provider({ children }) {
       setUserDetail(storage);
     }
   }, []);
+
+  useEffect(() => {
+    if(typeof window !== 'undefined') {
+      localStorage.setItem('emailTemplate', JSON.stringify(emailTemplate));
+    }
+  }, [emailTemplate]);
 
   return (
     <ConvexProvider client={convex}>
