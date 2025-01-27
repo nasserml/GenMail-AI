@@ -26,7 +26,6 @@ function Canvas() {
   };
 
   const getLayoutComponent = (layout) => {
-    console.log(emailTemplate);
     if (layout?.type == 'column') {
       return <ColumnLayout layout={layout} />;
     }

@@ -1,9 +1,9 @@
 import React from 'react'
 
-function TextComponent({style, content}) {
+function TextComponent({style, textarea}) {
   return (
-    <div>
-        <h2 style={style}>{content}</h2>
+    <div className='w-full'>
+        <h2 style={style}>{textarea}</h2>
     </div>
   )
 }

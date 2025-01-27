@@ -1,5 +1,9 @@
 'use client';
-import { useDragElementLayout, useEmailTemplate } from '@/app/provider';
+import {
+  useDragElementLayout,
+  useEmailTemplate,
+  useSelectedElement,
+} from '@/app/provider';
 import React, { useState } from 'react';
 import ButtonComponent from '../custom/Element/ButtonComponent';
 import TextComponent from '../custom/Element/TextComponent';
@@ -13,6 +17,7 @@ function ColumnLayout({ layout }) {
   const [dragOver, setDragOver] = useState();
   const { emailTemplate, setEmailTemplate } = useEmailTemplate();
   const { dragElementLayout, setDragElementLayout } = useDragElementLayout();
+  const { selectedElement, setSelectedElement } = useSelectedElement();
 
   const onDragOverHandle = (event, index) => {
     event.preventDefault();
@@ -32,7 +37,6 @@ function ColumnLayout({ layout }) {
           : col
       )
     );
-    console.log(emailTemplate);
     setDragOver(null);
   };
   const GetElementComponent = (element) => {
@@ -46,12 +50,11 @@ function ColumnLayout({ layout }) {
       return <LogoComponent {...element} />;
     } else if (element?.type == 'Divider') {
       return <DividerComponent {...element} />;
-    }else if (element?.type == 'LogoHeader') {
+    } else if (element?.type == 'LogoHeader') {
       return <LogoHeaderComponent {...element} />;
     } else if (element?.type == 'SocialIcons') {
       return <SocialIconsComponent {...element} />;
     }
-
 
     return element?.type;
   };
@@ -67,9 +70,12 @@ function ColumnLayout({ layout }) {
         {Array.from({ length: layout?.numOfCol }).map((_, index) => (
           <div
             key={index}
-            className={`p-2 flex items-center justify-center ${!layout?.[index]?.type && ' border border-dashed '} ${index == dragOver?.index && dragOver?.columnId && 'bg-green-100'}`}
+            className={`p-0 flex items-center justify-center cursor-pointer ${!layout?.[index]?.type && ' border border-dashed '} ${index == dragOver?.index && dragOver?.columnId && 'bg-green-100'}
+            ${(selectedElement?.layout?.id == layout?.id  && selectedElement?.index == index) && ' border-blue-500 border-2'}`}
             onDragOver={(event) => onDragOverHandle(event, index)}
             onDrop={onDropHandle}
+            onDragLeave={() => setDragOver(null)}
+            onClick={() => setSelectedElement({ layout: layout, index: index })}
           >
             {GetElementComponent(layout?.[index]) ?? 'Drag Element Here'}
           </div>

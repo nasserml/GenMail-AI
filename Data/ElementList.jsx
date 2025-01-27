@@ -20,7 +20,7 @@ export default [
     label: 'Button',
     type: 'Button',
     content: 'Simple Button',
-    url: '',
+    url: '#',
     style: {
       textAlign: 'center',
       backgroundColor: '#007bff',
@@ -43,15 +43,16 @@ export default [
     icon: TextSelectionIcon,
     type: 'Text',
     label: 'Text',
-    content: 'Sample Text',
+    textarea: 'Sample Text',
     style: {
-      backgroundColor: '',
+      backgroundColor: '#fff',
       color: '#000000',
       padding: '10px',
       textAlign: 'center',
-      fontSize: '18px',
+      fontSize: '22px',
       fontWeight: 'normal',
-      textTransform: 'uppercase',
+      textTransform: 'uppercase' // capitalize, lowercase
+      
     },
     outerStyle: {
       backgroundColor: '#fff',
@@ -64,7 +65,7 @@ export default [
     label: 'Image',
     imageUrl: '/image.png',
     alt: 'Image',
-    url: '',
+    url: '#',
     style: {
       backgroundColor: '#ffffff',
       padding: '10px',
@@ -87,7 +88,7 @@ export default [
     label: 'Logo',
     imageUrl: '/logo.svg',
     alt: 'logo',
-    url: '',
+    url: '#',
     style: {
       backgroundColor: '#ffffff',
       padding: '10px',
@@ -108,7 +109,7 @@ export default [
       label: 'Logo Header',
       imageUrl: "/logo.svg",
       alt: 'logo',
-      url: '',
+      url: '#',
       style: {
           backgroundColor: '#ffffff',
           padding: '10px',
@@ -141,29 +142,29 @@ export default [
     socialIcons: [
       {
         icon: 'https://cdn-icons-png.flaticon.com/128/2111/2111463.png',
-        url: '',
+        url: '#',
       },
       {
         icon: 'https://cdn-icons-png.flaticon.com/128/5968/5968852.png',
-        url: '',
+        url: '#',
       },
       {
         icon: 'https://cdn-icons-png.flaticon.com/128/5968/5968756.png',
-        url: '',
+        url: '#',
       },
     ],
     options: [
       {
         icon: 'https://cdn-icons-png.flaticon.com/128/2111/2111463.png',
-        url: '',
+        url: '#',
       },
       {
         icon: 'https://cdn-icons-png.flaticon.com/128/5968/5968852.png',
-        url: '',
+        url: '#',
       },
       {
         icon: 'https://cdn-icons-png.flaticon.com/128/5968/5968756.png',
-        url: '',
+        url: '#',
       },
     ],
     style: {
