@@ -70,7 +70,7 @@ function ColumnLayout({ layout }) {
   const moveItemUp = (layoutId) => {
     const index = emailTemplate?.findIndex((item) => item?.id == layoutId);
 
-    if (index > 0) {
+    if (index > 0) {  
       const updateEmailTemplate = [...emailTemplate];
       const item = updateEmailTemplate[index];
       updateEmailTemplate[index] = updateEmailTemplate[index - 1];
