@@ -216,10 +216,6 @@ Don't forget to give the project a star! Thanks again! ⭐
 
 This project is open-source and available under the [MIT License](LICENSE).
 
-##  📬 Connect & Say Hello! 👋
 
-[Your Name/Organization] - [Link to your Website/Portfolio] - [Your Email]
-
-[Link to your Twitter](Your Twitter Link) - [Link to your LinkedIn](Your LinkedIn Link) - [Link to your Project Website]
 
 **Let's revolutionize email creation together!** ✨ Happy designing! 📧
