@@ -18,7 +18,7 @@ This project is built with Next.js and leverages AI to streamline your email des
 
 ## 💖 Support & Donations
 
-If you find CodeMind AI helpful and would like to support its development, you can make a donation:
+If you find GenMail AI helpful and would like to support its development, you can make a donation:
 
 - **PayPal**: [mnasserone@gmail.com](mailto:mnasserone@gmail.com)
 
